@@ -1,0 +1,83 @@
+{
+  "case_count": 4,
+  "prediction_count": 8,
+  "metrics": {
+    "top1_accuracy": 0.875,
+    "mean_reciprocal_rank": 0.9375,
+    "mean_culprit_probability": 0.6261585714085404,
+    "mean_log_loss": 0.5691179476003619,
+    "uniform_baseline_log_loss": 1.3862943611198906
+  },
+  "results": [
+    {
+      "case": "Grand Hotel",
+      "scenario": "Partial evidence",
+      "correct": false,
+      "rank": 2,
+      "culprit_probability": 0.25581395348837205,
+      "log_loss": 1.3633048428951922
+    },
+    {
+      "case": "Grand Hotel",
+      "scenario": "All evidence",
+      "correct": true,
+      "rank": 1,
+      "culprit_probability": 0.33823821833366474,
+      "log_loss": 1.084004843776103
+    },
+    {
+      "case": "Observatory",
+      "scenario": "Partial evidence",
+      "correct": true,
+      "rank": 1,
+      "culprit_probability": 0.3602941176470587,
+      "log_loss": 1.0208345876254257
+    },
+    {
+      "case": "Observatory",
+      "scenario": "All evidence",
+      "correct": true,
+      "rank": 1,
+      "culprit_probability": 0.7413363967068732,
+      "log_loss": 0.2993007800398314
+    },
+    {
+      "case": "Blackwood Manor",
+      "scenario": "Partial evidence",
+      "correct": true,
+      "rank": 1,
+      "culprit_probability": 0.7611940298507461,
+      "log_loss": 0.27286698666664044
+    },
+    {
+      "case": "Blackwood Manor",
+      "scenario": "All evidence",
+      "correct": true,
+      "rank": 1,
+      "culprit_probability": 0.9833342607534361,
+      "log_loss": 0.016806175177738424
+    },
+    {
+      "case": "Ashford Station",
+      "scenario": "Partial evidence",
+      "correct": true,
+      "rank": 1,
+      "culprit_probability": 0.7044198895027625,
+      "log_loss": 0.35038066666734485
+    },
+    {
+      "case": "Ashford Station",
+      "scenario": "All evidence",
+      "correct": true,
+      "rank": 1,
+      "culprit_probability": 0.8646377049854095,
+      "log_loss": 0.14544469795461884
+    }
+  ],
+  "limitations": [
+    "Only two manually authored fictional cases were evaluated.",
+    "Likelihoods are illustrative assumptions, not learned estimates.",
+    "Evidence scenarios from the same case are not independent cases.",
+    "The uniform baseline is a probability baseline, not a trained competitor."
+  ]
+}

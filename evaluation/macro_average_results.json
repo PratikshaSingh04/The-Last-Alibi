@@ -1,0 +1,89 @@
+{
+  "case_count": 4,
+  "per_case": {
+    "Blackwood Manor": {
+      "Original": {
+        "combinations": 4095,
+        "top1_accuracy": 0.9907203907203908,
+        "mean_reciprocal_rank": 0.9952787952787953,
+        "mean_culprit_probability": 0.7761333480083792,
+        "mean_log_loss": 0.2819562679982241
+      },
+      "Reliability-adjusted": {
+        "combinations": 4095,
+        "top1_accuracy": 0.98998778998779,
+        "mean_reciprocal_rank": 0.9949124949124949,
+        "mean_culprit_probability": 0.7312793202072706,
+        "mean_log_loss": 0.34629532777351385
+      }
+    },
+    "Ashford Station": {
+      "Original": {
+        "combinations": 255,
+        "top1_accuracy": 0.9490196078431372,
+        "mean_reciprocal_rank": 0.9745098039215686,
+        "mean_culprit_probability": 0.5920673998273508,
+        "mean_log_loss": 0.5672872823276113
+      },
+      "Reliability-adjusted": {
+        "combinations": 255,
+        "top1_accuracy": 0.9490196078431372,
+        "mean_reciprocal_rank": 0.9745098039215686,
+        "mean_culprit_probability": 0.5416414135213453,
+        "mean_log_loss": 0.6580773329554813
+      }
+    },
+    "Observatory": {
+      "Original": {
+        "combinations": 255,
+        "top1_accuracy": 0.8549019607843137,
+        "mean_reciprocal_rank": 0.9245098039215687,
+        "mean_culprit_probability": 0.4915559743828753,
+        "mean_log_loss": 0.7527865409036643
+      },
+      "Reliability-adjusted": {
+        "combinations": 255,
+        "top1_accuracy": 0.8392156862745098,
+        "mean_reciprocal_rank": 0.9179738562091503,
+        "mean_culprit_probability": 0.4269190029817229,
+        "mean_log_loss": 0.8841805465519732
+      }
+    },
+    "Grand Hotel": {
+      "Original": {
+        "combinations": 255,
+        "top1_accuracy": 0.45098039215686275,
+        "mean_reciprocal_rank": 0.6800653594771239,
+        "mean_culprit_probability": 0.29581518246320526,
+        "mean_log_loss": 1.2345674169073169
+      },
+      "Reliability-adjusted": {
+        "combinations": 255,
+        "top1_accuracy": 0.33725490196078434,
+        "mean_reciprocal_rank": 0.6205882352941173,
+        "mean_culprit_probability": 0.2711592280781256,
+        "mean_log_loss": 1.3134297632197824
+      }
+    }
+  },
+  "macro_average": {
+    "Original": {
+      "top1_accuracy": 0.8114055878761761,
+      "mean_reciprocal_rank": 0.8935909406497641,
+      "mean_culprit_probability": 0.5388929761704526,
+      "mean_log_loss": 0.7091493770342041
+    },
+    "Reliability-adjusted": {
+      "top1_accuracy": 0.7788694965165553,
+      "mean_reciprocal_rank": 0.8769960975843327,
+      "mean_culprit_probability": 0.4927497411971161,
+      "mean_log_loss": 0.8004957426251877
+    }
+  },
+  "limitations": [
+    "Four manually authored fictional cases.",
+    "Likelihoods and reliability scores are illustrative assumptions.",
+    "Evidence subsets are not independent cases.",
+    "Macro-average gives each case equal weight."
+  ]
+}

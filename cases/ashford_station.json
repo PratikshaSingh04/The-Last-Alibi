@@ -1,0 +1,195 @@
+
+{
+  "case_id": "ashford_station_01",
+  "title": "The Last Train to Ashford",
+  "victim": {
+    "name": "Arthur Pembroke",
+    "role": "Owner of Ashford Private Railway Station"
+  },
+  "incident": {
+    "location": "Station Master's Office",
+    "estimated_start": "22:00",
+    "estimated_end": "22:30"
+  },
+  "suspects": [
+    {
+      "id": "S1",
+      "name": "Helen Ward",
+      "role": "Station Accountant",
+      "motive": "Arthur had discovered irregularities in the station accounts.",
+      "alibi": {
+        "location": "Ticket Office",
+        "start": "22:00",
+        "end": "22:30"
+      }
+    },
+    {
+      "id": "S2",
+      "name": "Victor Hale",
+      "role": "Station Manager",
+      "motive": "Arthur planned to remove Victor from his position after a serious dispute.",
+      "alibi": {
+        "location": "Platform Two",
+        "start": "22:00",
+        "end": "22:30"
+      }
+    },
+    {
+      "id": "S3",
+      "name": "Nora Ellis",
+      "role": "Night Cleaner",
+      "motive": "Arthur had threatened to terminate Nora's employment.",
+      "alibi": {
+        "location": "Waiting Room",
+        "start": "22:00",
+        "end": "22:30"
+      }
+    },
+    {
+      "id": "S4",
+      "name": "Thomas Reed",
+      "role": "Railway Mechanic",
+      "motive": "Arthur blamed Thomas for a costly signalling failure.",
+      "alibi": {
+        "location": "Signal Cabin",
+        "start": "22:00",
+        "end": "22:30"
+      }
+    }
+  ],
+  "clues": [
+    {
+      "id": "AS01",
+      "name": "The Disciplinary Notice",
+      "description": "A signed notice indicates that Arthur intended to dismiss the station manager.",
+      "type": "motive",
+      "reliability": 0.9,
+      "likelihoods": {
+        "S1": 0.35,
+        "S2": 0.75,
+        "S3": 0.3,
+        "S4": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "AS02",
+      "name": "The Platform Camera",
+      "description": "A recording appears to show Victor near the Station Master's Office at 22:14, despite his claim that he remained on Platform Two.",
+      "type": "physical",
+      "reliability": 0.92,
+      "likelihoods": {
+        "S1": 0.25,
+        "S2": 0.85,
+        "S3": 0.25,
+        "S4": 0.3
+      },
+      "observations": [
+        {
+          "suspect_id": "S2",
+          "location": "Station Master's Office",
+          "time": "22:14",
+          "confidence": 0.92
+        }
+      ]
+    },
+    {
+      "id": "AS03",
+      "name": "The Accountant's Receipt",
+      "description": "A receipt places Helen at the Ticket Office shortly after 22:10, consistent with part of her alibi.",
+      "type": "document",
+      "reliability": 0.8,
+      "likelihoods": {
+        "S1": 0.25,
+        "S2": 0.35,
+        "S3": 0.35,
+        "S4": 0.35
+      },
+      "observations": [
+        {
+          "suspect_id": "S1",
+          "location": "Ticket Office",
+          "time": "22:12",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "id": "AS04",
+      "name": "The Cleaning Record",
+      "description": "A signed cleaning log supports Nora's presence in the Waiting Room at 22:16.",
+      "type": "document",
+      "reliability": 0.78,
+      "likelihoods": {
+        "S1": 0.35,
+        "S2": 0.35,
+        "S3": 0.25,
+        "S4": 0.35
+      },
+      "observations": [
+        {
+          "suspect_id": "S3",
+          "location": "Waiting Room",
+          "time": "22:16",
+          "confidence": 0.78
+        }
+      ]
+    },
+    {
+      "id": "AS05",
+      "name": "The Signal Interruption",
+      "description": "A maintenance log records a brief signalling interruption near the time of the incident, but does not identify who caused it.",
+      "type": "technical",
+      "reliability": 0.65,
+      "likelihoods": {
+        "S1": 0.3,
+        "S2": 0.4,
+        "S3": 0.3,
+        "S4": 0.55
+      },
+      "observations": []
+    },
+    {
+      "id": "AS06",
+      "name": "The Torn Schedule",
+      "description": "A torn railway schedule contains a handwritten note about a private meeting with Arthur. The author is unknown.",
+      "type": "document",
+      "reliability": 0.6,
+      "likelihoods": {
+        "S1": 0.35,
+        "S2": 0.5,
+        "S3": 0.35,
+        "S4": 0.4
+      },
+      "observations": []
+    },
+    {
+      "id": "AS07",
+      "name": "The Office Key",
+      "description": "The spare key to the Station Master's Office is missing. Several employees had legitimate access to it.",
+      "type": "physical",
+      "reliability": 0.85,
+      "likelihoods": {
+        "S1": 0.4,
+        "S2": 0.55,
+        "S3": 0.4,
+        "S4": 0.4
+      },
+      "observations": []
+    },
+    {
+      "id": "AS08",
+      "name": "The Passenger's Account",
+      "description": "A passenger recalls seeing someone in a dark uniform near the office around 22:20 but cannot identify the person reliably.",
+      "type": "witness",
+      "reliability": 0.5,
+      "likelihoods": {
+        "S1": 0.35,
+        "S2": 0.45,
+        "S3": 0.35,
+        "S4": 0.35
+      },
+      "observations": []
+    }
+  ]
+}

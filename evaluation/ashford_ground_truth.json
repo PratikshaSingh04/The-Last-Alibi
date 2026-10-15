@@ -1,0 +1,12 @@
+
+{
+  "case_id": "ashford_station_01",
+  "culprit_id": "S2",
+  "culprit_name": "Victor Hale",
+  "reasoning": [
+    "Victor had a documented conflict with Arthur over his continued employment.",
+    "The platform recording appears to place Victor near the Station Master's Office during the incident window.",
+    "The missing office key and other circumstantial evidence provide additional context but do not independently establish guilt."
+  ],
+  "note": "Victor is the predefined culprit for this fictional evaluation case. The ground truth was specified by the case author; the Bayesian engine does not independently establish guilt."
+}

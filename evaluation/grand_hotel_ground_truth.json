@@ -1,0 +1,12 @@
+
+{
+  "case_id": "grand_hotel_01",
+  "culprit_id": "H4",
+  "culprit_name": "Daniel Frost",
+  "reasoning": [
+    "The service elevator log and corridor footprints provide circumstantial links to the maintenance area.",
+    "The maintenance invoice provides a possible context for conflict with Margaret.",
+    "The evidence is ambiguous and does not independently establish Daniel's guilt."
+  ],
+  "note": "Daniel is the predefined culprit for this fictional evaluation case. The likelihoods are illustrative assumptions and must not be interpreted as empirically validated probabilities."
+}

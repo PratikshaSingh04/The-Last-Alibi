@@ -1,0 +1,251 @@
+
+{
+  "case_id": "blackwood_001",
+  "title": "The Midnight at Blackwood Manor",
+  "victim": {
+    "name": "Richard Blackwood",
+    "role": "Owner of Blackwood Manor"
+  },
+  "incident": {
+    "location": "Study",
+    "estimated_start": "21:00",
+    "estimated_end": "21:30"
+  },
+  "suspects": [
+    {
+      "id": "E1",
+      "name": "Eleanor",
+      "role": "Niece",
+      "motive": "Inheritance dispute",
+      "alibi": {
+        "location": "Library",
+        "start": "21:00",
+        "end": "21:30"
+      }
+    },
+    {
+      "id": "M1",
+      "name": "Marcus",
+      "role": "Business partner",
+      "motive": "Financial disagreement",
+      "alibi": {
+        "location": "Office",
+        "start": "21:00",
+        "end": "21:30"
+      }
+    },
+    {
+      "id": "C1",
+      "name": "Clara",
+      "role": "Housekeeper",
+      "motive": "Threatened with dismissal",
+      "alibi": {
+        "location": "Kitchen",
+        "start": "21:00",
+        "end": "21:30"
+      }
+    },
+    {
+      "id": "D1",
+      "name": "Daniel",
+      "role": "Nephew",
+      "motive": "Recent argument with the victim",
+      "alibi": {
+        "location": "Garden",
+        "start": "21:00",
+        "end": "21:30"
+      }
+    }
+  ],
+  "clues": [
+    {
+      "id": "CL01",
+      "name": "The Financial Dispute",
+      "description": "A document reveals a financial disagreement between Richard and Marcus.",
+      "type": "motive",
+      "reliability": 0.95,
+      "likelihoods": {
+        "E1": 0.30,
+        "M1": 0.75,
+        "C1": 0.20,
+        "D1": 0.30
+      },
+      "observations": []
+    },
+    {
+      "id": "CL02",
+      "name": "The Hallway Recording",
+      "description": "A camera recording appears to identify Marcus near the study at 21:18.",
+      "type": "location_observation",
+      "reliability": 0.92,
+      "likelihoods": {
+        "E1": 0.25,
+        "M1": 0.85,
+        "C1": 0.25,
+        "D1": 0.25
+      },
+      "observations": [
+        {
+          "suspect_id": "M1",
+          "location": "Study",
+          "time": "21:18",
+          "confidence": 0.92
+        }
+      ]
+    },
+    {
+      "id": "CL03",
+      "name": "The Library Witness",
+      "description": "A witness recalls seeing Eleanor in the library around 21:12.",
+      "type": "location_observation",
+      "reliability": 0.80,
+      "likelihoods": {
+        "E1": 0.20,
+        "M1": 0.35,
+        "C1": 0.35,
+        "D1": 0.35
+      },
+      "observations": [
+        {
+          "suspect_id": "E1",
+          "location": "Library",
+          "time": "21:12",
+          "confidence": 0.80
+        }
+      ]
+    },
+    {
+      "id": "CL04",
+      "name": "The Altered Contract",
+      "description": "A contract appears to have been altered shortly before the incident.",
+      "type": "document",
+      "reliability": 0.85,
+      "likelihoods": {
+        "E1": 0.30,
+        "M1": 0.70,
+        "C1": 0.20,
+        "D1": 0.25
+      },
+      "observations": []
+    },
+    {
+      "id": "CL05",
+      "name": "The Kitchen Log",
+      "description": "A kitchen log records activity consistent with Clara being in the kitchen at 21:19.",
+      "type": "location_observation",
+      "reliability": 0.75,
+      "likelihoods": {
+        "E1": 0.35,
+        "M1": 0.35,
+        "C1": 0.20,
+        "D1": 0.35
+      },
+      "observations": [
+        {
+          "suspect_id": "C1",
+          "location": "Kitchen",
+          "time": "21:19",
+          "confidence": 0.75
+        }
+      ]
+    },
+    {
+      "id": "CL06",
+      "name": "The Garden Sensor",
+      "description": "A motion sensor recorded movement in the garden at 21:16, but it cannot identify the person.",
+      "type": "ambiguous_observation",
+      "reliability": 0.60,
+      "likelihoods": {
+        "E1": 0.35,
+        "M1": 0.35,
+        "C1": 0.35,
+        "D1": 0.45
+      },
+      "observations": []
+    },
+    {
+      "id": "CL07",
+      "name": "The Torn Letter",
+      "description": "A torn letter reveals that Richard planned to change a business agreement.",
+      "type": "motive",
+      "reliability": 0.90,
+      "likelihoods": {
+        "E1": 0.30,
+        "M1": 0.70,
+        "C1": 0.20,
+        "D1": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "CL08",
+      "name": "The Unusual Footprints",
+      "description": "Muddy footprints are found near the side entrance, but their owner is unknown.",
+      "type": "physical_evidence",
+      "reliability": 0.65,
+      "likelihoods": {
+        "E1": 0.35,
+        "M1": 0.45,
+        "C1": 0.35,
+        "D1": 0.50
+      },
+      "observations": []
+    },
+    {
+      "id": "CL09",
+      "name": "The Missing Key",
+      "description": "The spare key to the study is missing from its usual location.",
+      "type": "physical_evidence",
+      "reliability": 0.90,
+      "likelihoods": {
+        "E1": 0.40,
+        "M1": 0.55,
+        "C1": 0.45,
+        "D1": 0.40
+      },
+      "observations": []
+    },
+    {
+      "id": "CL10",
+      "name": "The Garden Phone Signal",
+      "description": "A phone-location record suggests Daniel's phone was near the garden at 21:17. The phone may not have been carried by Daniel.",
+      "type": "ambiguous_observation",
+      "reliability": 0.70,
+      "likelihoods": {
+        "E1": 0.35,
+        "M1": 0.35,
+        "C1": 0.35,
+        "D1": 0.25
+      },
+      "observations": []
+    },
+    {
+      "id": "CL11",
+      "name": "The Broken Clock",
+      "description": "A clock in the study stopped at 21:12, but the reason and accuracy of the time are unknown.",
+      "type": "ambiguous_observation",
+      "reliability": 0.45,
+      "likelihoods": {
+        "E1": 0.35,
+        "M1": 0.40,
+        "C1": 0.35,
+        "D1": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "CL12",
+      "name": "The Witness's Correction",
+      "description": "A witness corrects an earlier statement about when someone entered the hallway. The identity remains uncertain.",
+      "type": "witness_statement",
+      "reliability": 0.55,
+      "likelihoods": {
+        "E1": 0.35,
+        "M1": 0.45,
+        "C1": 0.35,
+        "D1": 0.35
+      },
+      "observations": []
+    }
+  ]
+}

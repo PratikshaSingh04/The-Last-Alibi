@@ -1,0 +1,12 @@
+
+{
+  "case_id": "blackwood_manor_01",
+  "culprit_id": "M1",
+  "culprit_name": "Marcus",
+  "reasoning": [
+    "Marcus had a financial disagreement with Richard.",
+    "The hallway recording appears to place Marcus near the study at 21:18.",
+    "The altered contract and torn letter provide a possible motive connected to the business dispute."
+  ],
+  "note": "This is the fictional case's predefined answer for evaluation. The AI estimates probabilities from the evidence; it does not independently establish guilt."
+}

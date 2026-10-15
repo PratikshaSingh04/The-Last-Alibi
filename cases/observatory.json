@@ -1,0 +1,181 @@
+
+{
+  "case_id": "observatory_01",
+  "title": "The Observatory at 11:47",
+  "victim": {
+    "name": "Dr. Adrian Vale",
+    "role": "Director of Northstar Observatory"
+  },
+  "incident": {
+    "location": "Control Room",
+    "estimated_start": "23:30",
+    "estimated_end": "23:59"
+  },
+  "suspects": [
+    {
+      "id": "O1",
+      "name": "Mira Chen",
+      "role": "Research Astronomer",
+      "motive": "Adrian intended to withdraw funding from Mira's research.",
+      "alibi": {
+        "location": "Research Lab",
+        "start": "23:30",
+        "end": "23:59"
+      }
+    },
+    {
+      "id": "O2",
+      "name": "Leon Brooks",
+      "role": "Security Officer",
+      "motive": "Adrian had reported Leon for repeatedly neglecting security procedures.",
+      "alibi": {
+        "location": "Security Desk",
+        "start": "23:30",
+        "end": "23:59"
+      }
+    },
+    {
+      "id": "O3",
+      "name": "Sofia Reyes",
+      "role": "Systems Engineer",
+      "motive": "Adrian planned to investigate unauthorized changes to the observatory systems.",
+      "alibi": {
+        "location": "Equipment Room",
+        "start": "23:30",
+        "end": "23:59"
+      }
+    },
+    {
+      "id": "O4",
+      "name": "Ethan Cole",
+      "role": "Visiting Researcher",
+      "motive": "Adrian had rejected Ethan's proposal for a permanent research position.",
+      "alibi": {
+        "location": "Observation Deck",
+        "start": "23:30",
+        "end": "23:59"
+      }
+    }
+  ],
+  "clues": [
+    {
+      "id": "OB01",
+      "name": "The Funding Email",
+      "description": "An email confirms that Adrian intended to reconsider Mira's research funding.",
+      "type": "motive",
+      "reliability": 0.9,
+      "likelihoods": {
+        "O1": 0.75,
+        "O2": 0.3,
+        "O3": 0.35,
+        "O4": 0.3
+      },
+      "observations": []
+    },
+    {
+      "id": "OB02",
+      "name": "The System Access Log",
+      "description": "A system log records an equipment-room terminal accessing the Control Room shortly before the incident. The account owner is not conclusively identified.",
+      "type": "digital",
+      "reliability": 0.82,
+      "likelihoods": {
+        "O1": 0.3,
+        "O2": 0.35,
+        "O3": 0.7,
+        "O4": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "OB03",
+      "name": "The Security Roster",
+      "description": "The roster indicates that Leon was assigned to the Security Desk during the incident window, but does not prove he remained there.",
+      "type": "document",
+      "reliability": 0.7,
+      "likelihoods": {
+        "O1": 0.35,
+        "O2": 0.25,
+        "O3": 0.35,
+        "O4": 0.35
+      },
+      "observations": [
+        {
+          "suspect_id": "O2",
+          "location": "Security Desk",
+          "time": "23:42",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "id": "OB04",
+      "name": "The Equipment Checklist",
+      "description": "A checklist signed by Sofia records an equipment inspection near the time of the incident. The signature has not been independently verified.",
+      "type": "document",
+      "reliability": 0.65,
+      "likelihoods": {
+        "O1": 0.35,
+        "O2": 0.35,
+        "O3": 0.4,
+        "O4": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "OB05",
+      "name": "The Power Fluctuation",
+      "description": "A brief power fluctuation was recorded before the incident. Its cause is unknown.",
+      "type": "technical",
+      "reliability": 0.6,
+      "likelihoods": {
+        "O1": 0.3,
+        "O2": 0.35,
+        "O3": 0.55,
+        "O4": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "OB06",
+      "name": "The Observation Deck Witness",
+      "description": "A visitor recalls seeing someone near the Observation Deck, but cannot reliably identify the person or exact time.",
+      "type": "witness",
+      "reliability": 0.45,
+      "likelihoods": {
+        "O1": 0.35,
+        "O2": 0.35,
+        "O3": 0.35,
+        "O4": 0.45
+      },
+      "observations": []
+    },
+    {
+      "id": "OB07",
+      "name": "The Deleted Configuration",
+      "description": "A system configuration was deleted. Several authorized employees had permission to modify it.",
+      "type": "digital",
+      "reliability": 0.8,
+      "likelihoods": {
+        "O1": 0.35,
+        "O2": 0.4,
+        "O3": 0.6,
+        "O4": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "OB08",
+      "name": "The Unsent Message",
+      "description": "A draft message suggests that Adrian planned to confront an employee about system changes, but the intended recipient is missing.",
+      "type": "document",
+      "reliability": 0.7,
+      "likelihoods": {
+        "O1": 0.35,
+        "O2": 0.35,
+        "O3": 0.55,
+        "O4": 0.35
+      },
+      "observations": []
+    }
+  ]
+}

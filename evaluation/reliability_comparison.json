@@ -1,0 +1,168 @@
+{
+  "summary": {
+    "Original": {
+      "prediction_count": 8,
+      "top1_accuracy": 0.875,
+      "mean_reciprocal_rank": 0.9375,
+      "mean_culprit_probability": 0.6261585714085404,
+      "mean_log_loss": 0.5691179476003618
+    },
+    "Reliability-adjusted": {
+      "prediction_count": 8,
+      "top1_accuracy": 0.75,
+      "mean_reciprocal_rank": 0.875,
+      "mean_culprit_probability": 0.5840632441374576,
+      "mean_log_loss": 0.6459316341728083
+    }
+  },
+  "results": {
+    "Original": [
+      {
+        "case": "Blackwood Manor",
+        "scenario": "Partial evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.7611940298507461,
+        "log_loss": 0.27286698666664044,
+        "top_suspect": "M1"
+      },
+      {
+        "case": "Blackwood Manor",
+        "scenario": "All evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.9833342607534361,
+        "log_loss": 0.016806175177738424,
+        "top_suspect": "M1"
+      },
+      {
+        "case": "Ashford Station",
+        "scenario": "Partial evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.7044198895027625,
+        "log_loss": 0.35038066666734485,
+        "top_suspect": "S2"
+      },
+      {
+        "case": "Ashford Station",
+        "scenario": "All evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.8646377049854095,
+        "log_loss": 0.14544469795461884,
+        "top_suspect": "S2"
+      },
+      {
+        "case": "Observatory",
+        "scenario": "Partial evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.3602941176470587,
+        "log_loss": 1.0208345876254257,
+        "top_suspect": "O3"
+      },
+      {
+        "case": "Observatory",
+        "scenario": "All evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.7413363967068732,
+        "log_loss": 0.2993007800398314,
+        "top_suspect": "O3"
+      },
+      {
+        "case": "Grand Hotel",
+        "scenario": "Partial evidence",
+        "correct": false,
+        "rank": 2,
+        "culprit_probability": 0.25581395348837205,
+        "log_loss": 1.3633048428951922,
+        "top_suspect": "H1"
+      },
+      {
+        "case": "Grand Hotel",
+        "scenario": "All evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.33823821833366474,
+        "log_loss": 1.084004843776103,
+        "top_suspect": "H4"
+      }
+    ],
+    "Reliability-adjusted": [
+      {
+        "case": "Blackwood Manor",
+        "scenario": "Partial evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.7354029465679951,
+        "log_loss": 0.3073367033674919,
+        "top_suspect": "M1"
+      },
+      {
+        "case": "Blackwood Manor",
+        "scenario": "All evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.9692038388277971,
+        "log_loss": 0.0312803292265238,
+        "top_suspect": "M1"
+      },
+      {
+        "case": "Ashford Station",
+        "scenario": "Partial evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.670611990234716,
+        "log_loss": 0.399564565248957,
+        "top_suspect": "S2"
+      },
+      {
+        "case": "Ashford Station",
+        "scenario": "All evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.8053322972986879,
+        "log_loss": 0.21650029506322968,
+        "top_suspect": "S2"
+      },
+      {
+        "case": "Observatory",
+        "scenario": "Partial evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.33648093353686315,
+        "log_loss": 1.089213792611532,
+        "top_suspect": "O3"
+      },
+      {
+        "case": "Observatory",
+        "scenario": "All evidence",
+        "correct": true,
+        "rank": 1,
+        "culprit_probability": 0.6213409884790086,
+        "log_loss": 0.4758752519671812,
+        "top_suspect": "O3"
+      },
+      {
+        "case": "Grand Hotel",
+        "scenario": "Partial evidence",
+        "correct": false,
+        "rank": 2,
+        "culprit_probability": 0.2444978871309691,
+        "log_loss": 1.4085486116956776,
+        "top_suspect": "H1"
+      },
+      {
+        "case": "Grand Hotel",
+        "scenario": "All evidence",
+        "correct": false,
+        "rank": 2,
+        "culprit_probability": 0.2896350710236233,
+        "log_loss": 1.2391335242018735,
+        "top_suspect": "H1"
+      }
+    ]
+  }
+}

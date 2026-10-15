@@ -1,0 +1,188 @@
+{
+  "Original": {
+    "evidence_combinations": 4860,
+    "top1_accuracy": 0.9530864197530864,
+    "mean_reciprocal_rank": 0.973936899862826,
+    "mean_culprit_probability": 0.7263421588572103,
+    "mean_log_loss": 0.37161408100577487,
+    "by_clue_count": {
+      "1": {
+        "count": 36,
+        "top1_accuracy": 0.5833333333333334,
+        "mean_reciprocal_rank": 0.7569444444444443,
+        "mean_culprit_probability": 0.3160107958726023,
+        "mean_log_loss": 1.1844054877171728
+      },
+      "2": {
+        "count": 150,
+        "top1_accuracy": 0.76,
+        "mean_reciprocal_rank": 0.8666666666666665,
+        "mean_culprit_probability": 0.3952152843743608,
+        "mean_log_loss": 0.9815128560583958
+      },
+      "3": {
+        "count": 388,
+        "top1_accuracy": 0.8427835051546392,
+        "mean_reciprocal_rank": 0.9151632302405492,
+        "mean_culprit_probability": 0.48702798193893104,
+        "mean_log_loss": 0.779475867001046
+      },
+      "4": {
+        "count": 705,
+        "top1_accuracy": 0.9092198581560283,
+        "mean_reciprocal_rank": 0.9505910165484642,
+        "mean_culprit_probability": 0.587142425745083,
+        "mean_log_loss": 0.586127653543893
+      },
+      "5": {
+        "count": 960,
+        "top1_accuracy": 0.9604166666666667,
+        "mean_reciprocal_rank": 0.9776041666666673,
+        "mean_culprit_probability": 0.6866327595634358,
+        "mean_log_loss": 0.4147393971033077
+      },
+      "6": {
+        "count": 1008,
+        "top1_accuracy": 0.9880952380952381,
+        "mean_reciprocal_rank": 0.992724867724868,
+        "mean_culprit_probability": 0.7748727481732957,
+        "mean_log_loss": 0.2777547732764456
+      },
+      "7": {
+        "count": 816,
+        "top1_accuracy": 0.9975490196078431,
+        "mean_reciprocal_rank": 0.9983660130718955,
+        "mean_culprit_probability": 0.8448872961789091,
+        "mean_log_loss": 0.17928829691569434
+      },
+      "8": {
+        "count": 498,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.8959037506783766,
+        "mean_log_loss": 0.11404350819180498
+      },
+      "9": {
+        "count": 220,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.9313806680211095,
+        "mean_log_loss": 0.07242631724867307
+      },
+      "10": {
+        "count": 66,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.955736510413698,
+        "mean_log_loss": 0.045688294079497906
+      },
+      "11": {
+        "count": 12,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.9724143186485144,
+        "mean_log_loss": 0.02805851274559915
+      },
+      "12": {
+        "count": 1,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.9833342607534361,
+        "mean_log_loss": 0.016806175177738424
+      }
+    }
+  },
+  "Reliability-adjusted": {
+    "evidence_combinations": 4860,
+    "top1_accuracy": 0.945679012345679,
+    "mean_reciprocal_rank": 0.9701646090534983,
+    "mean_culprit_probability": 0.6812175567113126,
+    "mean_log_loss": 0.4416213407670754,
+    "by_clue_count": {
+      "1": {
+        "count": 36,
+        "top1_accuracy": 0.5833333333333334,
+        "mean_reciprocal_rank": 0.7569444444444443,
+        "mean_culprit_probability": 0.30397686275451674,
+        "mean_log_loss": 1.2188062942535343
+      },
+      "2": {
+        "count": 150,
+        "top1_accuracy": 0.7466666666666667,
+        "mean_reciprocal_rank": 0.861111111111111,
+        "mean_culprit_probability": 0.37042759252827384,
+        "mean_log_loss": 1.042406766513379
+      },
+      "3": {
+        "count": 388,
+        "top1_accuracy": 0.8350515463917526,
+        "mean_reciprocal_rank": 0.9112972508591058,
+        "mean_culprit_probability": 0.4503731008362867,
+        "mean_log_loss": 0.8575265996247574
+      },
+      "4": {
+        "count": 705,
+        "top1_accuracy": 0.9035460992907801,
+        "mean_reciprocal_rank": 0.9472813238770695,
+        "mean_culprit_probability": 0.5413484962718323,
+        "mean_log_loss": 0.6711882695403877
+      },
+      "5": {
+        "count": 960,
+        "top1_accuracy": 0.95,
+        "mean_reciprocal_rank": 0.9722222222222229,
+        "mean_culprit_probability": 0.6359401887329184,
+        "mean_log_loss": 0.4974598982631702
+      },
+      "6": {
+        "count": 1008,
+        "top1_accuracy": 0.9771825396825397,
+        "mean_reciprocal_rank": 0.9872685185185188,
+        "mean_culprit_probability": 0.7239569973324856,
+        "mean_log_loss": 0.3515341445134581
+      },
+      "7": {
+        "count": 816,
+        "top1_accuracy": 0.991421568627451,
+        "mean_reciprocal_rank": 0.9953022875816995,
+        "mean_culprit_probability": 0.7975995886717824,
+        "mean_log_loss": 0.2411115165835238
+      },
+      "8": {
+        "count": 498,
+        "top1_accuracy": 0.9979919678714859,
+        "mean_reciprocal_rank": 0.998995983935743,
+        "mean_culprit_probability": 0.8546513869874771,
+        "mean_log_loss": 0.1636817752450735
+      },
+      "9": {
+        "count": 220,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.8972603869986727,
+        "mean_log_loss": 0.11099766427802712
+      },
+      "10": {
+        "count": 66,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.9289331551018579,
+        "mean_log_loss": 0.0746561012522967
+      },
+      "11": {
+        "count": 12,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.9524666580425226,
+        "mean_log_loss": 0.04892609316816105
+      },
+      "12": {
+        "count": 1,
+        "top1_accuracy": 1.0,
+        "mean_reciprocal_rank": 1.0,
+        "mean_culprit_probability": 0.9692038388277971,
+        "mean_log_loss": 0.0312803292265238
+      }
+    }
+  }
+}

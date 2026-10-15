@@ -1,0 +1,12 @@
+
+{
+  "case_id": "observatory_01",
+  "culprit_id": "O3",
+  "culprit_name": "Sofia Reyes",
+  "reasoning": [
+    "Adrian intended to investigate unauthorized system changes.",
+    "The system access log links an equipment-room terminal to the Control Room.",
+    "The deleted configuration and unsent message provide additional circumstantial context."
+  ],
+  "note": "Sofia is the predefined culprit for this fictional evaluation case. The evidence likelihoods are illustrative assumptions and do not independently establish guilt."
+}

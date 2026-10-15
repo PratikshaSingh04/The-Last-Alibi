@@ -1,0 +1,181 @@
+
+{
+  "case_id": "grand_hotel_01",
+  "title": "The Vanishing at the Grand Hotel",
+  "victim": {
+    "name": "Margaret Ashford",
+    "role": "Owner of the Grand Hotel"
+  },
+  "incident": {
+    "location": "Private Suite",
+    "estimated_start": "20:30",
+    "estimated_end": "21:00"
+  },
+  "suspects": [
+    {
+      "id": "H1",
+      "name": "Olivia Grant",
+      "role": "Hotel Manager",
+      "motive": "Margaret planned to replace Olivia after discovering management problems.",
+      "alibi": {
+        "location": "Reception",
+        "start": "20:30",
+        "end": "21:00"
+      }
+    },
+    {
+      "id": "H2",
+      "name": "James Porter",
+      "role": "Chef",
+      "motive": "Margaret had threatened to close the hotel's restaurant.",
+      "alibi": {
+        "location": "Kitchen",
+        "start": "20:30",
+        "end": "21:00"
+      }
+    },
+    {
+      "id": "H3",
+      "name": "Isabelle Moore",
+      "role": "Financial Advisor",
+      "motive": "Margaret disputed a recent financial recommendation.",
+      "alibi": {
+        "location": "Conference Room",
+        "start": "20:30",
+        "end": "21:00"
+      }
+    },
+    {
+      "id": "H4",
+      "name": "Daniel Frost",
+      "role": "Maintenance Supervisor",
+      "motive": "Margaret blamed Daniel for repeated maintenance failures.",
+      "alibi": {
+        "location": "Service Corridor",
+        "start": "20:30",
+        "end": "21:00"
+      }
+    }
+  ],
+  "clues": [
+    {
+      "id": "GH01",
+      "name": "The Management Letter",
+      "description": "A letter indicates that Margaret was considering replacing Olivia as hotel manager.",
+      "type": "motive",
+      "reliability": 0.85,
+      "likelihoods": {
+        "H1": 0.65,
+        "H2": 0.35,
+        "H3": 0.4,
+        "H4": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "GH02",
+      "name": "The Service Elevator Log",
+      "description": "An access log records a service elevator trip toward the private suites. The passenger is unidentified.",
+      "type": "digital",
+      "reliability": 0.65,
+      "likelihoods": {
+        "H1": 0.4,
+        "H2": 0.4,
+        "H3": 0.4,
+        "H4": 0.55
+      },
+      "observations": []
+    },
+    {
+      "id": "GH03",
+      "name": "The Reception Witness",
+      "description": "A guest recalls speaking with Olivia near reception at approximately 20:42, but the timing is uncertain.",
+      "type": "witness",
+      "reliability": 0.6,
+      "likelihoods": {
+        "H1": 0.3,
+        "H2": 0.35,
+        "H3": 0.35,
+        "H4": 0.35
+      },
+      "observations": [
+        {
+          "suspect_id": "H1",
+          "location": "Reception",
+          "time": "20:42",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "id": "GH04",
+      "name": "The Kitchen Inventory",
+      "description": "A kitchen inventory was signed by James during the evening, but the exact signing time is unclear.",
+      "type": "document",
+      "reliability": 0.6,
+      "likelihoods": {
+        "H1": 0.35,
+        "H2": 0.3,
+        "H3": 0.35,
+        "H4": 0.35
+      },
+      "observations": []
+    },
+    {
+      "id": "GH05",
+      "name": "The Altered Invoice",
+      "description": "An invoice contains an unexplained change connected to hotel maintenance expenditure.",
+      "type": "document",
+      "reliability": 0.7,
+      "likelihoods": {
+        "H1": 0.4,
+        "H2": 0.35,
+        "H3": 0.5,
+        "H4": 0.45
+      },
+      "observations": []
+    },
+    {
+      "id": "GH06",
+      "name": "The Corridor Footprints",
+      "description": "Footprints near the service corridor are too indistinct to identify their owner.",
+      "type": "physical",
+      "reliability": 0.45,
+      "likelihoods": {
+        "H1": 0.35,
+        "H2": 0.35,
+        "H3": 0.35,
+        "H4": 0.45
+      },
+      "observations": []
+    },
+    {
+      "id": "GH07",
+      "name": "The Missing Room Key",
+      "description": "A spare key to the private suite cannot be located. Several employees had access to the key cabinet.",
+      "type": "physical",
+      "reliability": 0.75,
+      "likelihoods": {
+        "H1": 0.45,
+        "H2": 0.4,
+        "H3": 0.4,
+        "H4": 0.45
+      },
+      "observations": []
+    },
+    {
+      "id": "GH08",
+      "name": "The Unsent Appointment",
+      "description": "A draft appointment request shows that Margaret intended to meet someone privately, but the recipient is missing.",
+      "type": "document",
+      "reliability": 0.55,
+      "likelihoods": {
+        "H1": 0.35,
+        "H2": 0.35,
+        "H3": 0.45,
+        "H4": 0.35
+      },
+      "observations": []
+    }
+  ]
+}
